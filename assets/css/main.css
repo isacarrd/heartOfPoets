@@ -46,6 +46,7 @@ div#txt-hero span {
 div#txt-hero p {
   font: var(--descricao-desk);
   color: var(--txt-sec);
+  text-align: center;
 }
 
 /* CARDS */
