@@ -1,0 +1,183 @@
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 100px;
+}
+
+div.conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  color: var(--txt-prim);
+}
+
+div.header {
+  width: 1080px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+div.txt h1 {
+  font: var(--h1-poem-desk);
+}
+
+div.botao-voltar {
+  align-content: flex-start;
+}
+
+div.botao-voltar button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 66px;
+  height: 66px;
+  padding: 14px;
+
+  border-radius: 100%;
+  background-color: var(--botao-voltar);
+  border: none;
+  cursor: pointer;
+}
+
+div.botao-voltar a {
+  width: 66px;
+  height: 66px;
+  text-decoration: none;
+}
+
+div.botao-voltar a:hover {
+  button {
+    background-color: var(--botao-voltar-hover);
+  }
+  button span::before {
+    content: "";
+    background-image: url("/assets/images/desktop/icons/arrow-left-desktop-hover.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+button span::before {
+  content: "";
+  background-image: url("/assets/images/desktop/icons/arrow-left-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+div.poe-cont {
+  width: 1080px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 24px;
+  gap: 32px;
+
+  background-color: var(--card-poem);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(62, 62, 62, 0.3);
+  border-radius: 20px;
+}
+div.poe-cont:has(summary:hover) {
+  background-color: var(--card-poem-hover);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(179, 179, 179, 0.3);
+}
+
+div.poe-cont details {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 24px;
+  align-items: flex-start;
+}
+div.poe-cont details[open] {
+  gap: 32px;
+}
+
+details summary {
+  cursor: pointer;
+  font: var(--poem-date-desk);
+  ::marker {
+    padding-right: 14px;
+  }
+}
+div.poema-txt {
+  flex-direction: row;
+  padding: 16px 0px;
+}
+.poema {
+  white-space: pre-line;
+  font: var(--poema-desk);
+  text-align: left;
+}
+
+/* Media Querie */
+@media (max-width: 1050px) {
+  div.botao-voltar button {
+    width: 33px;
+    height: 32px;
+    padding: 0;
+  }
+  div.botao-voltar a {
+    width: 33px;
+    height: 32px;
+  }
+  button span::before {
+    background-image: url("/assets/images/mobile/icons/arrow-left-mobile.png");
+    width: 10px;
+    height: 10px;
+  }
+  div.botao-voltar a:hover {
+    button span::before {
+      background-image: url("/assets/images/mobile/icons/arrow-left-mobile-hover.png");
+      width: 10px;
+      height: 10px;
+    }
+  }
+  div.header {
+    width: 327px;
+    gap: 24px;
+  }
+  div.txt h1 {
+    font: var(--h1-poem-mob);
+  }
+  main {
+    padding: 40px 24px;
+  }
+  div.conteudo {
+    gap: 32px;
+  }
+  div.poe-cont {
+    width: 327px;
+    gap: 24px;
+    padding: 12px 20px;
+  }
+  div.poe-cont details {
+    padding: 10px 20px;
+  }
+  div.poe-cont details[open] {
+    gap: 20px;
+  }
+  details summary {
+    font: var(--poem-date-mob);
+    ::marker {
+      padding-right: 12px;
+    }
+  }
+  div.poema-txt {
+    padding: 12px 0px;
+  }
+  .poema {
+    font: var(--poema-mob);
+  }
+}

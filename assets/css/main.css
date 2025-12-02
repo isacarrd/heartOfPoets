@@ -1,0 +1,223 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 314px;
+}
+main a{
+  text-decoration: none;
+  color: var(--txt-card);
+}
+main a:hover{
+  color: var(--txt-prim);
+}
+
+div#hero {
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+div#txt-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+div#icon img {
+  width: 346px;
+  height: 346px;
+  border-radius: 100%;
+}
+
+div#txt-hero {
+  color: var(--txt-prim);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+div#txt-hero span {
+  font: var(--user-desk);
+}
+div#txt-hero p {
+  font: var(--descricao-desk);
+  color: var(--txt-sec);
+}
+
+/* CARDS */
+
+div#infos-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 0;
+}
+
+div#infos-card span {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+
+  width: fit-content;
+  padding: 12px 24px;
+
+  background-color: var(--card-profile);
+  border-radius: 20px;
+  color: var(--txt-card);
+  font: var(--label-info-desk);
+}
+
+#lesb-com::before {
+  content: "";
+  background-image: url("/assets/images/desktop/icons/lesb-desk.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#nb-com::before {
+  content: "";
+  background-image: url("/assets/images/desktop/icons/nb-desk.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#age::before {
+  content: "";
+  background-image: url("/assets/images/desktop/icons/calendario-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#loc::before {
+  content: "";
+  background-image: url("/assets/images/desktop/icons/pin-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#steam::before {
+  content: "";
+  background-image: url("/assets/images/desktop/icons/steam-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#insta::before {
+  content: "";
+  background-image: url("/assets/images/desktop/icons/instagram-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#github::before {
+  content: "";
+  background-image: url("/assets/images/desktop/icons/github-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Media Querie */
+@media (max-width: 1050px) {
+  main {
+    padding: 45px 64px;
+    gap: 8px;
+  }
+  div#hero {
+    width: 250px;
+    gap: 14px;
+  }
+  div#txt-icon {
+    gap: 14px;
+  }
+  div#icon img {
+    width: 148px;
+    height: 148px;
+  }
+  div#txt-hero {
+    padding: 8px 0px;
+    gap: 8px;
+  }
+  div#txt-hero span {
+    font: var(--user-mob);
+  }
+  div#txt-hero p {
+    font: var(--descricao-mob);
+  }
+  div#infos-card {
+    gap: 12px;
+    padding: 0px 8px;
+  }
+  div#infos-card span {
+    padding: 4px 8px;
+    font: var(--label-info-mob);
+  }
+  #lesb-com::before {
+    width: 14px;
+    height: 14px;
+  }
+  #nb-com::before {
+    width: 14px;
+    height: 14px;
+  }
+  #age::before {
+    background-image: url("/assets/images/mobile/icons/calendario-mobile.png");
+    width: 14px;
+    height: 14px;
+  }
+  #loc::before {
+    background-image: url("/assets/images/mobile/icons/pin-mobile.png");
+    width: 14px;
+    height: 14px;
+  }
+  #steam::before {
+    background-image: url("/assets/images/mobile/icons/steam-mobile.png");
+    width: 14px;
+    height: 14px;
+  }
+  #insta::before {
+    background-image: url("/assets/images/mobile/icons/instagram-mobile.png");
+    width: 14px;
+    height: 14px;
+  }
+  #github::before {
+    background-image: url("/assets/images/mobile/icons/github-mobile.png");
+    width: 14px;
+    height: 14px;
+  }
+}

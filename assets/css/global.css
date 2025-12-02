@@ -1,0 +1,64 @@
+:root {
+  /* Cores */
+  --bg-color: #111112;
+
+  --txt-prim: #ffffff;
+  --txt-sec: #9f9f9f;
+  --txt-card: #acacac;
+
+  --card-profile: #313131;
+  --card-poem: #1e1e1e40;
+  --card-poem-hover: #7d7d7d20;
+
+  --botao-voltar: #2d2d2d;
+  --botao-voltar-hover: #8d8d8d;
+
+  /* Fonte(s) */
+  --font-family: "Inter", sans-serif;
+
+  /* Desktop */
+  --label-info-desk: normal 16px var(--font-family);
+  --p-desk: normal 16px var(--font-family);
+  --h2-desk: bold 48px var(--font-family);
+  --poema-desk: normal 16px/200% var(--font-family);
+  --user-desk: bold 36px var(--font-family);
+  --descricao-desk: normal 20px var(--font-family);
+  --h1-poem-desk: bold 64px var(--font-family);
+  --poem-date-desk: bold 32px var(--font-family);
+  --year-desk: bold 48px var(--font-family);
+
+  /* Mobile */
+  --label-info-mob: normal 10px var(--font-family);
+  --p-mob: normal 14px var(--font-family);
+  --h2-mob: bold 24px var(--font-family);
+  --poema-mob: normal 12px/200% var(--font-family);
+  --user-mob: bold 16px var(--font-family);
+  --descricao-mob: normal 10px var(--font-family);
+  --h1-poem-mob: bold 24px var(--font-family);
+  --poem-date-mob: bold 14px var(--font-family);
+  --year-mob: bold 16px var(--font-family);
+}
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-color);
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--botao-voltar-hover);
+  border-radius: 20px;
+}

@@ -1,0 +1,90 @@
+section#poemas {
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 80px 100px;
+  gap: 60px;
+}
+
+section#poemas a {
+  color: var(--txt-prim);
+  font: var(--year-desk);
+  text-decoration: none;
+}
+section#poemas a:hover {
+  div.poema-ano-card {
+    background-color: var(--card-poem-hover);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+
+div.txt{
+  color: var(--txt-prim);
+
+  width: 1080px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+div.txt h2 {
+  font: var(--h2-desk);
+}
+div.txt p {
+  font: var(--p-desk);
+}
+
+div#poema-ano {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 58px;
+}
+
+div.poema-ano-card {
+  width: 400px;
+  height: 400px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--card-poem);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(62, 62, 62, 0.3);
+  border-radius: 20px;
+}
+
+/* Media Querie */
+@media (max-width: 1050px) {
+  section#poemas{
+    padding: 48px 24px;
+    gap: 48px;
+  }
+  section#poemas a{
+    font: var(--year-mob);
+  }
+  section#poemas h2{
+    font: var(--h2-mob);
+  }
+  section#poemas p{
+    font: var(--p-mob);
+  }
+  div.txt{
+    width: 327px;
+    gap: 12px;
+  }
+  div#poema-ano{
+    gap: 48px;
+  }
+  div.poema-ano-card{
+    width: 115px;
+    height: 115px;
+  }
+}
