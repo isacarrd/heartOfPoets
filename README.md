@@ -1,4 +1,4 @@
-<h1 align="center" style="font-weight: bold;">Landing Page - Redragon ⌨️</h1>
+<h1 align="center" style="font-weight: bold;">Landing Page - HeartOfPoets ⌨️</h1>
 
 <p align="center">
   <a href="#objective">Objetivo</a> • 
